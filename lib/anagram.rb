@@ -3,7 +3,7 @@ class AnagramTest
     @word_arr1 = word_one.downcase.split("")
     @word_arr2 = word_two.downcase.split("")
     @word_check =[]
-    @letter_check = ["a","i","e","o","u"]
+    @vowel_count = 0
   end
 
   def anagram_test()
@@ -13,10 +13,17 @@ class AnagramTest
       end
     end
 
-      if @word_check.length === @word_arr1.length
-        return "this is an Anagram"
-      else
-        return "this is an Anti-gram"
+    i = 0
+    while i < @word_arr1.length do
+      if string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u"
+        vowels += 1
       end
     end
+
+    if @word_check.length === @word_arr1.length
+      return "this is an Anagram"
+    else
+      return "this is an Anti-gram"
+    end
   end
+end
