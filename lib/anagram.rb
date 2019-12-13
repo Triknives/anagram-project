@@ -9,12 +9,12 @@ class AnagramTest
     @word_arr1.each do |letter|
       if @word_arr2.include?(letter)
         @word_check.push(letter)
-        return @word_check
-      end
-      if @word_check.length === @word_arr1.length
-        return "This be an anagram"
-      else
+        return @word_arr1
+        
+      elsif @word_check.length > @word_arr1.length || @word_check.length < @word_arr1.length
         return "This is an Anti-gram"
+      else
+        return "This is an Anagram"
       end
     end
   end
