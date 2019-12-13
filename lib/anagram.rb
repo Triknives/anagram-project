@@ -3,6 +3,7 @@ class AnagramTest
     @word_arr1 = word_one.downcase.split("")
     @word_arr2 = word_two.downcase.split("")
     @word_check =[]
+    @letter_check = ["a","i","e","o","u"]
   end
 
   def anagram_test()
