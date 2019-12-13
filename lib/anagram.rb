@@ -1,7 +1,7 @@
 class AnagramTest
   def initialize(word_one, word_two)
-    @word_arr1 = word_one.downcase.split(" ")
-    @word_arr2 = word_two.downcase.split(" ")
+    @word_arr1 = word_one.downcase.split("")
+    @word_arr2 = word_two.downcase.split("")
     @word_check =[]
   end
 
@@ -10,12 +10,12 @@ class AnagramTest
       if @word_arr2.include?(object)
         @word_check.push(object)
       end
+    end
 
       if @word_check.length === @word_arr1.length
-        return "this is an anagram"
+        return "this is an Anagram"
       else
         return "this is an Anti-gram"
       end
     end
   end
-end
