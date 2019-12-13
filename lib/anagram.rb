@@ -1,13 +1,18 @@
 class AnagramTest
-  def initialize(word)
-    @word_one = word_one
-    @word_two = word_two
+  def initialize(word_one)
+    @word_one = ""
+    # @word_two = word_two
   end
 
-  if (word_one.class === Integer)
-    puts "Sorry, please enter real word"
+  def word_one
+    @word_one
   end
+  # def word_two = gets.chomp
+  # end
 
-
-
+  def anagram_test()
+    if (@word_one.class === String)
+     return "Great, now enter another word"
+    end
+  end
 end

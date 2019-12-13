@@ -1,11 +1,11 @@
-require('rspec')
-require('anagram')
+require ('rspec')
+require ('anagram')
 
 
 describe("testing player choice") do
 
-  it("returns true if rock is the object and scissors is the argument") do
-
-    expect(()).to(eq())
+  it("will test the class of word") do
+    word = AnagramTest.new("tea")
+    expect(word.anagram_test()).to(eq(String))
   end
 end
