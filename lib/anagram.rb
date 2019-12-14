@@ -6,13 +6,14 @@ class AnagramTest
     @vowel_count = 0
   end
 
+
+  #Assesses matching letters within words provided, then creates new array to to allow for further comparison of letters contained in both.
   def anagram_test()
     @word_arr1.each do |object|
       if @word_arr2.include?(object)
         @word_check.push(object)
       end
     end
-
 
     #this is an approach I came across a few times online, utilizing a "counter" to track vowels. This will allow me to run it against the spec "must have a vowel" to be a real word, as vowel count must be >
     def vowel_check()

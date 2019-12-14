@@ -15,4 +15,8 @@ describe("testing player choice") do
     word3 = AnagramTest.new("adfea", "eat")
     expect(word3.anagram_test()).to(eq("this is an Anti-gram"))
   end
+  it("will test if catches Anti-gram") do
+    word4 = AnagramTest.new("tea", "eat")
+    expect(word4.vowel_check()).to(eq(2))
+  end
 end
