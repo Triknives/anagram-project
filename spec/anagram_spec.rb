@@ -19,4 +19,8 @@ describe("testing player choice") do
     word4 = AnagramTest.new("tea", "eat")
     expect(word4.vowel_check()).to(eq(2))
   end
+  it("will test if catches Anti-gram") do
+    word5 = AnagramTest.new("ttttt", "ttttt")
+    expect(word5.real_word_check()).to(eq("this is not a real word, KID"))
+  end
 end

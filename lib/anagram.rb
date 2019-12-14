@@ -26,6 +26,11 @@ class AnagramTest
       end
       return @vowel_count
     end
+    def real_word_check()
+      if @vowel_count == 0
+        return "this is not a real word, KID"
+      end
+    end
 
     #assesses the length of array to determine all needed letters were pushed and match original length
     if @word_check.length === @word_arr1.length
