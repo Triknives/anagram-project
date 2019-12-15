@@ -27,4 +27,16 @@ describe("testing player choice") do
     test6 = AnagramTest.new("I Eat", "I Tea")
     expect(test6.anagram_test()).to(eq("These words are Anagrams"))
   end
+  it("Will test removal of special characters") do
+    test7 = AnagramTest.new("I'm Eat", "I'm Tea")
+    expect(test7.anagram_test()).to(eq("These words are Anagrams"))
+  end
+  it("Will test removal of special characters") do
+    test8 = AnagramTest.new("I'm Eat", "I;m Tea")
+    expect(test8.anagram_test()).to(eq("These words are Anti-grams"))
+  end
+  it("Will test removal of special characters") do
+    test8 = AnagramTest.new("I'm Eat", "Im T'ea")
+    expect(test8.anagram_test()).to(eq("These words are Anagrams"))
+  end
 end

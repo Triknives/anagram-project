@@ -15,7 +15,7 @@ class AnagramTest
       end
       i += 1
     end
-    
+
     #Will now take vowel count and run it against our "real word" conditional.
     if @vowel_count == 0
       return "this is not a real word, KID"
