@@ -8,6 +8,15 @@
 
 _As stated, this application is designed to assess provided words for likeness in letters to better fit the requires of an anagram. The application will assess each letter, to better establish if it contains vowels, to meet the "real word" criteria, while further establishing if the two words compared are anagrams or antigrams._
 
+
+## Input / Output
+
+|  Behavior | Input  | Output  |
+|---|---|---|
+| Will take in two words, and assess if they are Anagrams or Antigrams| Tea, Eat | "These words are Anagrams" |
+| Example of Antigram | Cat, Tacfeasd | "These words are Antigrams" |
+| Will assess if there are no vowels, making the input invalid. Notifies the user they are not real words. | ttttt, kkkkk | ""this is not a real word, KID"" |
+
 ## Setup/Installation Requirements
 
 * _Clone or download Git files provided._
@@ -28,10 +37,11 @@ _If you have any concerns, comments or even suggestions on how to better organiz
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _Ruby 2.5.1_
+* _Rspec_
+* _Pry_
 
 ### License
-
 *This software is licensed under the MIT license.*
 
 Copyright (c) 2016 **_Brett Cordell_**
