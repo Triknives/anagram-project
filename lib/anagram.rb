@@ -15,14 +15,6 @@ class AnagramTest
       end
     end
 
-    # i = 0
-    # while i < @word_arr1.length do
-    #   if @word_arr1[i] == "a" || @word_arr1[i] == "e" || @word_arr1[i] == "i" || @word_arr1[i] == "o" || @word_arr1[i] == "u"
-    #     @vowel_count += 1
-    #   end
-    #   i += 1
-    # end
-
     #Will now take vowel count and run it against our "real word" conditional.
     if @vowel_count == 0
       return "this is not a real word, KID"
