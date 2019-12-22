@@ -12,7 +12,7 @@ describe("testing player choice") do
     expect(test2.anagram_test()).to(eq("These words are Anagrams"))
   end
   it("will test if catches Anti-gram") do
-    test3 = AnagramTest.new("adfea", "eat")
+    test3 = AnagramTest.new("cat", "dog")
     expect(test3.anagram_test()).to(eq("These words are Anti-grams"))
   end
   it("will test if catches Anti-gram") do
@@ -32,8 +32,8 @@ describe("testing player choice") do
     expect(test7.anagram_test()).to(eq("These words are Anagrams"))
   end
   it("Will test removal of special characters") do
-    test8 = AnagramTest.new("I'm Eat", "I;m Tea")
-    expect(test8.anagram_test()).to(eq("These words are Anti-grams"))
+    test8 = AnagramTest.new("I'm Eat", "I'm Tea")
+    expect(test8.anagram_test()).to(eq("These words are Anagrams"))
   end
   it("Will test removal of special characters") do
     test8 = AnagramTest.new("I'm Eat", "Im T'ea")

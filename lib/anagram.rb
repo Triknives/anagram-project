@@ -27,8 +27,11 @@ class AnagramTest
         @word_check.push(object)
       end
     end
-    if @word_check.length === @word_arr1.length
+    if  @word_check.length === @word_arr1.length &&  @word_arr2.length === @word_arr1.length
       return "These words are Anagrams"
+    end
+    if @word_check.length === 0
+      return "These words are Anti-grams"
     else
       return "These words are Anti-grams"
     end
